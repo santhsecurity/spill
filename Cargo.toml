@@ -1,0 +1,29 @@
+[package]
+name = "spill"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+authors = ["Corum Collective LLC <contact@santh.io>"]
+description = "Intelligent GPU memory tiering for local LLM inference — your model spills past VRAM, spill makes it fast"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/santhsecurity/spill"
+homepage = "https://github.com/santhsecurity/spill"
+readme = "README.md"
+keywords = ["gpu", "memory", "inference", "llm", "vram"]
+categories = ["memory-management", "hardware-support"]
+
+[lib]
+name = "spill"
+crate-type = ["lib", "cdylib"]
+
+[dependencies]
+libc = "=0.2.184"
+
+[features]
+default = []
+# GPU memory primitives (when vyre is available)
+# vyre-runtime = ["dep:vyre"]
+# NVMe direct storage (when NVIDIA GDS is available)
+# gds = ["vyre-runtime", "vyre/transfer-gds"]
+
+[workspace]
