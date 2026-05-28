@@ -1,5 +1,7 @@
 # helix
 
+Part of [Santh](https://santh.dev) - open source Rust security and infrastructure tooling. Follow [@SanthProject](https://x.com/SanthProject) on X.
+
 Intelligent GPU memory tiering plugin for llama.cpp — learns access patterns, prefetches data, makes local LLM inference faster
 
 Intelligent GPU memory tiering primitives for llama.cpp backends.
